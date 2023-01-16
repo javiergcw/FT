@@ -10,10 +10,10 @@ import Inicio from "../components/Header/inicio";
 
 export default function Home() {
   return (
-    <>
+    <main className="container px-16 mx-auto">
       <Inicio />
       <br />
-      <div className="px-14">
+      <div className="">
         <Title title="Marcas destacadas" subtitle="Ver todas" src="#" />
         <Marks />
         <br />
@@ -39,6 +39,6 @@ export default function Home() {
       </div>
       <WhyBuyWithFT className="px-0" />
       <Footer />
-    </>
+    </main>
   );
 }

@@ -15,7 +15,7 @@ import {
 import { AiOutlineMail } from "react-icons/ai";
 
 export const Footerft = () => (
-  <div className="px-14">
+  <div >
     {/* Boton */}
     <div className="flex justify-end">
       <Link href="#">

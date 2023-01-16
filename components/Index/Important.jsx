@@ -24,7 +24,7 @@ const Data = [
 ];
 
 const Important = () => {
-  <div className="border-[#D9D9D9] border-2 rounded-lg">
+  <div className="border-[#D9D9D9] border-2 rounded-lg ">
     <div className="grid grid-cols-1 lg:grid-cols-3 justify-items-center">
       {Data.map((item, index) => (
         <div className="flex flex-row p-14 gap-x-4 ">

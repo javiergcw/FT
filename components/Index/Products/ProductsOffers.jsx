@@ -46,8 +46,8 @@ const Data = [
 
 const ProductsOffers = () => {
   return (
-    <div className="flex justify-between pt-2 lg:pt-10 border-[#D9D9D9] border-2 rounded-lg py-16 px-14 ">
-      <div className="grid lg:grid-cols-4 gap-6 md:w-8/12 md:mx-auto lg:w-full ">
+    <div className="flex justify-between pt-2 lg:pt-10 border-[#D9D9D9] border-2 rounded-lg py-16 px-14 w-">
+      <div className="grid lg:grid-cols-4 gap-11 md:w-8/12 md:mx-auto lg:w-full ">
         {Data.map((item, index) => (
           <Products src={item.src} />
         ))}

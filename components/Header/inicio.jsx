@@ -16,70 +16,74 @@ const Links = [
 const Inicio = () => {
   return (
     <>
-      <div className="text-[#637381] grid lg:grid-cols-2">
+      <div className="text-[#637381] grid justify-between grid-flow-col auto-cols-max py-3">
         <div>
-          <span className="font-semibold">Llama ahora: </span>(605) 3851717
+          <span className="font-bold">Llama ahora: </span>(605) 3851717
         </div>
         <div>
-          <div className="flex mb-0">
-            <div class="w-1/2 p-2 text-center"></div>
-
-            <div class="w-5/6 text-center">
-              <p className="text-sm">
-                <Image
-                  className="float-left pt-px"
-                  src="/images/icons/CarGray.svg"
-                  width={22}
-                  height={16}
-                />
-                <span>Envíos gratis</span> por compras superiores a $49.900
-              </p>
+          <div className="flex justify-between text-center">
+            <div className="pr-3">
+              <Image
+                className="float-left pt-1"
+                src="/images/icons/CarGray.svg"
+                width={24}
+                height={16}
+              />
+              <span className="pl-3"> <span className="font-bold">Envíos gratis</span> por compras superiores a $49.900</span>
             </div>
-
-            <div class="w-1/4 text-center text-sm">
-              <Link href="#">Ver farmacias</Link>
-            </div>
+            <Link href="#">Ver farmacias</Link>
           </div>
         </div>
       </div>
 
-      <hr width="100%" />
+      <hr width="100%" className="px-px" />
 
-      <div className="flex">
-        <div className="w-1/2">
+      <div className="flex ">
+        <div className="py-8">
           <Image src="/images/Logo.svg" width={315} height={32} />
         </div>
 
-        <div className="w-1/2">
-          <div className="relative w-96">
+        <div className="py-8">
+          <div className="relative w-full grid grid-flow-col auto-cols-max object-center">
             <input
               type="search"
               id="search-dropdown"
-              className="block rounded-lg
-              p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-r-lg border-l-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+              className="
+              p-2.5 w-96 z-20 bg-[#EFF4FF] rounded-l-lg text-base font-semibold
+              focus:ring-blue-500 border-r-[#EFF4FF] focus:border-blue-500 border-[#D9D9D9] border-2 "
               placeholder="Busca entre miles de productos y marcas"
             />
+
             <button
               type="submit"
-              className="absolute top-0 right-0 p-2.5  text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              className=" p-2.5 w-12 h-12  text-sm font-medium  text-white bg-blue-700 rounded-r-lg  hover:bg-blue-800  focus:ring-blue-300 border-1"
             >
-              <FaSearch className="text-xl" />
+              <div className="">
+                <Image
+                  className=""
+                  src="/images/icons/Search.svg"
+                  width={30}
+                  height={30} />
+              </div>
             </button>
+
+
           </div>
         </div>
 
-        <div className="grid grid-flow-col w-44 ">
-          <div className="content-center text-[#091535] font-semibold">
-            <div className="grid grid-flow-row w-16 place-content-center">
+        <div className="grid grid-flow-col w-48 pt-6  ">
+          <div className="content-center text-[#091535] font-semibold ">
+            <div className="grid grid-flow-row place-content-center pl-1 w-14 h-14">
               <button
                 type="button"
-                class=" text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
               >
-                <Image
+                <div className=""> <Image
+                  className=""
                   src="/images/icons/PProfilewhite.svg"
-                  width={22}
+                  width={30}
                   height={23}
-                />
+                /></div>
               </button>
             </div>
             Mi cuenta

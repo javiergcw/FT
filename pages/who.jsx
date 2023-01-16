@@ -1,6 +1,13 @@
+import Characteristics from "../components/who/Characteristics"
+import Welcome from "../components/who/welcome"
+
+
 const who = () => {
     return (
-        <div>who</div>
+        <>
+            <Welcome />
+            <Characteristics />
+        </>
     )
 }
 

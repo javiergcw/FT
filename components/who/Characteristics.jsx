@@ -36,13 +36,13 @@ const Data = [
 const Characteristics = () => {
     return (
         <>
-            <div className="bg-[#0F51FA] rounded-lg px-36">
+            <div className="mx-auto container bg-[#0F51FA] rounded-lg px-36">
                 <h1 className='text-3xl text-white font-bold text-center pt-16'>
                     Nuestro compromiso es apoyar la economía de nuestros clientes para poder brindarles:
                 </h1>
                 <div class="grid justify-items-center grid-cols-3 pt-24 pb-20 gap-y-14">
                     {Data.map((item, index) => (
-                        <div className="flex flex-col text-center">
+                        <div className="flex flex-col text-center container">
                             <Image
                                 src={item.src}
                                 width={100}

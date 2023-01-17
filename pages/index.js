@@ -6,14 +6,15 @@ import Important from "../components/Index/Important";
 import ProductsOffers from "../components/Index/Products/ProductsOffers";
 import Marks from "../components/Index/Marks";
 import Inicio from "../components/Header/inicio";
+import { Main } from "next/document";
 /* import Header from "../components/Header/Headerr"; */
 
 export default function Home() {
   return (
-    <main className="container px-16 mx-auto">
+    <>
       <Inicio />
       <br />
-      <div className="">
+      <main className="container px-16 mx-auto">
         <Title title="Marcas destacadas" subtitle="Ver todas" src="#" />
         <Marks />
         <br />
@@ -36,9 +37,9 @@ export default function Home() {
         />
         <Offerts />
         <br />
-      </div>
+      </main>
       <WhyBuyWithFT className="px-0" />
       <Footer />
-    </main>
+    </>
   );
 }

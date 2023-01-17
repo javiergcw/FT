@@ -3,10 +3,10 @@ import React from "react";
 
 const Products = (props) => {
   return (
-    <div className="border-[#D9D9D9] border-2 rounded-lg text-center w-60">
+    <div className="border-[#D9D9D9] border-2 rounded-lg text-center w-64">
       <Image className="w-full" src={props.src} width={250} height={245} />
 
-      <hr width="100%" className="h-0.5 mx-auto  bg-[#D9D9D9] border-0 " />
+      <hr width="100%" className="h-0.5 mx-auto bg-[#D9D9D9] border-0 " />
       <div className="px-5">
         <p className="text-[#637381] text-sm py-3">Pedialyte</p>
 

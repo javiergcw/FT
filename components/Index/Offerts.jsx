@@ -33,7 +33,7 @@ const Cards = [
 
 const Offerts = () => {
   return (
-    <div className="flex justify-between pt-2 lg:pt-10">
+    <div className="container flex justify-between pt-2 lg:pt-10">
       <div className="grid lg:grid-cols-4 gap-6 md:w-8/12 md:mx-auto lg:w-full ">
         {Cards.map((item, index) => (
           <div className="border-[#D9D9D9] border-2 rounded-lg">

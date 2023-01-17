@@ -49,108 +49,24 @@ const Data = [
 
 const Marks = () => {
   return (
-    <div className="grid lg:grid-cols-6 gap-6 md:w-8/12 md:mx-auto lg:w-full place-items-center ">
-      {/*  Bayer */}
-      <div
-        className="inline-block text-center text-white transition
-                 rounded-full shadow ripple hover:shadow-lg focus:outline-none border-[#D9D9D9] border-2 "
-      >
-        <div className="px-5 py-5">
-          <Link href="#">
-            <Image
-              src="/images/marks/bayer.svg"
-              className="p-4"
-              width={133}
-              height={133}
-            />
-          </Link>
-        </div>
-      </div>
-      {/* -- */}
+    <div className="container grid lg:grid-cols-6 gap-6 md:w-8/12 md:mx-auto lg:w-full pb-16">
 
-      {/*  Bioderma */}
-      <div
-        className="inline-block text-center text-white transition
-                 rounded-full shadow ripple hover:shadow-lg focus:outline-none border-[#D9D9D9] border-2 "
-      >
-        <div className="px-5 py-12">
-          <Link href="#">
-            <Image
-              src="/images/marks/bioderma.svg"
-              className="p-1"
-              width={130}
-              height={73}
-            />
-          </Link>
-        </div>
-      </div>
-      {/* -- */}
 
-      {/* Eucerin */}
-      <div
-        className="inline-block text-center text-white transition
-                 rounded-full shadow ripple hover:shadow-lg focus:outline-none border-[#D9D9D9] border-2 "
-      >
-        <div className="px-5 py-12">
-          <Link href="#">
-            <Image
-              src="/images/marks/eucerin.svg"
-              className="p-1"
-              width={140}
-              height={80}
-            />
-          </Link>
-        </div>
-      </div>
-      {/* -- */}
+      {Data.map((item, index) => (
+        <Link href={item.href} className=" inline-block text-center text-white transition
+        rounded-full shadow ripple hover:shadow-lg focus:outline-none w-44 h-44 border-[#D9D9D9] border-2">
 
-      {/* Headshoulders */}
-      <div
-        className="inline-block text-center text-white transition
-                 rounded-full shadow ripple hover:shadow-lg focus:outline-none border-[#D9D9D9] border-2 "
-      >
-        <div className="px-5 py-12">
-          <Link href="#">
+          <div className="">
             <Image
-              src="/images/marks/headshoulders.svg"
-              width={125}
-              height={70}
+              className="flex-shrink-0 object-cover object-center w-full h-full mx-auto -mt-8 rounded-full shadow-xl"
+              src={item.src}
+              width={100}
+              height={100}
             />
-          </Link>
-        </div>
-      </div>
-      {/* -- */}
+          </div>
+        </Link>
+      ))}
 
-      {/* Neutrogena */}
-      <div
-        className="inline-block text-center text-white transition
-                 rounded-full shadow ripple hover:shadow-lg focus:outline-none border-[#D9D9D9] border-2 "
-      >
-        <div className="px-5 py-12">
-          <Link href="#">
-            <Image src="/images/marks/neutrogena.svg" width={140} height={80} />
-          </Link>
-        </div>
-      </div>
-      {/*  -- */}
-
-      {/* Pedialyte */}
-      <div
-        className="inline-block text-center text-white transition
-                 rounded-full shadow ripple hover:shadow-lg focus:outline-none border-[#D9D9D9] border-2 "
-      >
-        <div className=" px-5 py-16 ">
-          <Link href="#">
-            <Image
-              src="/images/marks/pedialyte.svg"
-              className="p-1"
-              width={145}
-              height={52}
-            />
-          </Link>
-        </div>
-      </div>
-      {/* -- */}
     </div>
   );
 };

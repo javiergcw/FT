@@ -16,7 +16,7 @@ export default function Home() {
       <br />
       <main className="container px-16 mx-auto">
         <Title title="Marcas destacadas" subtitle="Ver todas" src="#" />
-        <Marks />
+        <Marks  />
         <br />
 
         <Title
@@ -38,7 +38,7 @@ export default function Home() {
         <Offerts />
         <br />
       </main>
-      <WhyBuyWithFT className="px-0" />
+      <WhyBuyWithFT/>
       <Footer />
     </>
   );

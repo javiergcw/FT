@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Welcome = () => {
     return (
-        <div className="border-[#D9D9D9] border-2 rounded-lg">
+        <div className="border-[#D9D9D9] border-2 rounded-lg ">
             <div className="px-52 py-28 w-full text-center	">
                 <Image
                     className="pb-14"

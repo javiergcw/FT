@@ -15,9 +15,11 @@ import {
 import { AiOutlineMail } from "react-icons/ai";
 
 export const Footerft = () => (
-  <div >
+  <main className="container px-16 mx-auto" >
+
+
     {/* Boton */}
-    <div className="flex justify-end">
+    <div className="flex justify-end ">
       <Link href="#">
         <button className="inline-block text-center text-white transition bg-[#8CA6EA] rounded-full shadow ripple hover:shadow-lg focus:outline-none">
           <FaAngleUp className="w-9 h-9 p-2 text-[#0F51FA]" />
@@ -25,27 +27,27 @@ export const Footerft = () => (
       </Link>
     </div>
     {/*  Centro de ayuda y contactanos */}
-    <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 pb-4">
+    <div className="flex gap-9 pb-4">
       <div className="grid grid-cols-1">
-        <h3 className="font-bold text-[#091535]">Centro de ayuda y contacto</h3>
+        <h3 className="font-bold text-[#091535] pb-5">Centro de ayuda y contacto</h3>
 
-        <label className="inline-flex items-center text-[#637381]">
+        <label className="inline-flex items-center text-[#637381] pb-5">
           <FaRegQuestionCircle />
           <span>¿Tienes alguna duda?</span>
         </label>
 
-        <div>
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <div className="pb-5">
+          <button className="bg-[#0F51FA] hover:bg-blue-800 text-white font-bold py-2 px-4 rounded ">
             Te ayudamos aqui
           </button>
         </div>
-        <div className="text-[#637381]">
+        <div className="text-[#637381] pb-4">
           Consulta tus dudas sobre medicamentos con nuestros farmaceuticos aqui
         </div>
       </div>
 
-      <div className="grid grid-cols-1 pb-2 lg:pb-14 ">
-        <h3 className="font-bold text-[#091535]">Conócenos</h3>
+      <div className="flex flex-col gap-y-2.5 ">
+        <h3 className="font-bold text-[#091535] pb-6">Conócenos</h3>
         <Link className="text-[#637381]" href="#">
           ¿Qué es farmacia Torres?
         </Link>
@@ -54,43 +56,42 @@ export const Footerft = () => (
         </Link>
       </div>
 
-      <div className="grid grid-cols-1 pb-4">
-        <div className="font-bold text-[#091535]"> Siguenos en</div>
+      <div className="flex flex-col">
+        <div className="font-bold text-[#091535] pb-9"> Siguenos en</div>
 
-        <div className="flex justify-start pb-2 lg:pb-14">
-          <div className="">
-            <Link href="https://es-la.facebook.com/FarmaciatorresWeb/">
-              <button className="inline-block text-center text-white transition bg-white rounded-full shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none">
-                <FaFacebookF className="w-9 h-9 p-2 hover:text-white text-black" />
-              </button>
-            </Link>
-            <Link href="https://www.instagram.com/farmaciatorres/">
-              <button className="inline-block text-center text-white transition bg-white rounded-full shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none">
-                <FaInstagramSquare className="w-9 h-9 p-2 hover:text-white text-black" />
-              </button>
-            </Link>
-            <Link href="https://www.youtube.com/@farmaciatorres6804">
-              <button className="inline-block text-center text-white transition bg-white rounded-full shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none">
-                <FaYoutube className="w-9 h-9 p-2 hover:text-white text-black" />
-              </button>
-            </Link>
-            <Link href="https://www.tiktok.com/@farmaciatorres_">
-              <button className="inline-block text-center text-white transition bg-white rounded-full shadow ripple hover:shadow-lg hover:bg-blue-800 focus:outline-none">
-                <FaTiktok className="w-9 h-9 p-2 hover:text-white text-black" />
-              </button>
-            </Link>
-          </div>
+        <div className="flex justify-start pb-2 lg:pb-14 gap-4">
+
+          <Link href="https://es-la.facebook.com/FarmaciatorresWeb/">
+            <button className="inline-block text-center text-white transition bg-white rounded-full shadow ripple hover:shadow-lg hover:bg-[#0F51FA] focus:outline-none">
+              <FaFacebookF className="w-9 h-9 p-2 hover:text-white text-black" />
+            </button>
+          </Link>
+          <Link href="https://www.instagram.com/farmaciatorres/">
+            <button className="inline-block text-center text-white transition bg-white rounded-full shadow ripple hover:shadow-lg hover:bg-[#0F51FA] focus:outline-none">
+              <FaInstagramSquare className="w-9 h-9 p-2 hover:text-white text-black" />
+            </button>
+          </Link>
+          <Link href="https://www.youtube.com/@farmaciatorres6804">
+            <button className="inline-block text-center text-white transition bg-white rounded-full shadow ripple hover:shadow-lg hover:bg-[#0F51FA] focus:outline-none">
+              <FaYoutube className="w-9 h-9 p-2 hover:text-white text-black" />
+            </button>
+          </Link>
+          <Link href="https://www.tiktok.com/@farmaciatorres_">
+            <button className="inline-block text-center text-white transition bg-white rounded-full shadow ripple hover:shadow-lg hover:bg-[#0F51FA] focus:outline-none">
+              <FaTiktok className="w-9 h-9 p-2 hover:text-white text-black" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>
     <hr width="100%" />
     {/* Newslestter */}
     <>
-      <h3 className="py-2 font-bold text-[#091535]">
+      <h3 className="font-bold text-lg  text-[#091535] py-4">
         Suscríbete a nuestro Newsletter
       </h3>
       <form>
-        <div className="grid grid-cols-1 py-2">
+        <div className="grid grid-cols-1 pb-4">
           <div className="relative w-64">
             <input
               type="search"
@@ -100,12 +101,12 @@ export const Footerft = () => (
             />
             <button
               type="submit"
-              className="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-blue-700 rounded-r-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
+              className="absolute top-0 right-0 p-2.5 text-sm font-medium text-white bg-[#0F51FA] rounded-r-lg border border-[#0F51FA] hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300"
             >
               <AiOutlineMail className="text-xl" />
             </button>
           </div>
-          <p className="py-4 text-[#637381]">
+          <p className="py-4 text-[#637381] pb-4">
             Entérate primero de nuestras exclusivas ofertas y promociones.
             ¡Suscríbete!
           </p>
@@ -126,7 +127,7 @@ export const Footerft = () => (
           </div>
         </div>
       </form>
-      <p className="py-2 text-[#637381]">
+      <p className="py-2 text-[#637381] pb-4">
         Te informamos de que Farmacia Torres tratará el correo electrónico
         facilitado para remitirte comunicaciones comerciales o promociones en
         base a tu perfil de usuario, en caso de otorgar tu consentimiento. Más
@@ -151,7 +152,7 @@ export const Footerft = () => (
     </div>
     <hr width="100%" />
     {/* Derechos reservados */}
-    <div className="grid grid-cols-1 text-left lg:text-start text-[#637381] lg:flex lg:justify-between py-2 lg:pb-0">
+    <div className="grid grid-cols-1 text-left lg:text-start text-[#637381] lg:flex lg:justify-between py-2 pt-2 lg:pb-0">
       <p>© 2023 Farmacia Torres. Todos los derechos reservados.</p>
       <div className="grid grid-cols-1 text-left lg:text-right py-4 lg:py-0">
         <Link className="pb-1" href="#">
@@ -168,7 +169,7 @@ export const Footerft = () => (
         </Link>
       </div>
     </div>
-  </div>
+  </main>
 );
 
 export default Footerft;

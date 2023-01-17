@@ -1,4 +1,6 @@
 
+import Footer from "../components/Footer/Footer";
+import Inicio from "../components/Header/inicio";
 import Routelabel from "../components/routelabel";
 import Image from "next/image";
 
@@ -67,12 +69,16 @@ const Data = [
 const location = () => {
   return (
     <>
-      <div className="pt-6">
-        <Routelabel label="Ver farmacias" />
+      <Inicio />
+      <main className="container px-16 mx-auto pb-14">
+
+        <Routelabel className="" label="Ver farmacias " />
+
         <div class="relative">
           <Image
+
             src="/images/Banner.svg"
-            className="w-full"
+            className="w-full py-5"
             width={255}
             height={1246}
           />
@@ -103,7 +109,9 @@ const location = () => {
           ))}
         </div>
 
-      </div>
+      </main>
+
+      <Footer />
     </>
 
 
